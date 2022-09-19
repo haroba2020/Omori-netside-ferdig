@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'omori_game2regular';
+    src: url('../img/omoriFontKit/omori_game-webfont.woff2') format('woff2'),
+         url('../img/omoriFontKit/omori_game-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'omori_gameregular';
+    src: url('../img/omoriFontKit/omori_game2-webfont.woff2') format('woff2'),
+         url('../img/omoriFontKit/omori_game2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    margin: 0px;
+    width: auto;
+    height: auto;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+   
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+/* used to give text the omori font */
+.omori-text{
+    font-family: "omori_gameregular";
+    font-size: 28px;
+}
+/* this is used to give the secondary creepier variant of the omori font */
+.omori-text-cursed{
+    font-family: "omori_game2regular";
+    font-size: 25px;
+}
+/* for headers with the omori font */
+.omori-header{
+    font-family: "omori_gameregular";
+    font-size: 58px;
+}
+
+.omori-white{
+    color: white;
+}
+.img-sm-margin{
+    margin: 8;
+    margin-left: 0;
+}
+.vertical-scrollable>.row {
+    position: absolute;
+    top: 120px;
+    bottom: 100px;
+    left: 180px;
+    width: 50%;
+    overflow-y: scroll;
+}
+/* Video */
+.center video{
+    pointer-events: none;
+    object-fit: contain;
+}
+
+
+/* @media screen and (max-width: 1600px){
+    
+} */
+/* Navigation */
+.main-nav{
+    padding: 20px;
+    top: 0px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 40px;
+    position: sticky;
+    background-color: white;
+    margin-bottom: 20;
+    margin-top: 20;
+    padding-bottom: 5;
+    padding-top: 7;
+    z-index: 1;
+    
+}
+.main-nav-li{
+    width: 100px;
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+    background: black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 1%;
+    box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+    font-family: 'omori_gameregular', Helvetica, sans-serif;
+    font-size: 30px;
+}
+/* hovering over the nav will make it hover 4px */
+.main-nav-li:hover{
+    position: relative;
+    color: white;
+    top: -4px;
+}
+.main-nav-ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.main-nav-a{
+    color: white;
+    text-decoration: none;
+}
+/* nav with bootstrap */
+.nav-link{
+    font-size: 30;
+    margin-right: 20;
+    font-family:"omori_gameregular";
+}
+
+
+/* Footer */
+#socials-gray{
+    text-align: center;
+    color: gray;
+}
+.steam{
+    margin: 5px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.socials img{
+      margin-left: 3px;
+      margin-right: 3px;
+      width: 40px;
+}
+.socials-font-awesome{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+/* scroll page */
+::-webkit-scrollbar {
+    display: none;
+}
+#inline-img{
+    padding: 3;
+}
+.scroll-padding{
+    padding-bottom: 50px;
+    padding-right: 0;
+    display: flex;
+}
+.scroll-bg{
+    background: black;
+    width: 500px;
+}
+.scroll-div{
+    width: 500px;
+    background: black;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+    padding-top: 30;
+}
+
+/* scroll page for fredrik.html */
+.scroll-bg-about{
+    background: black;
+    width: 400px;
+}
+.scroll-div-about{
+    width: 400px;
+    background: black;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+    padding-top: 30;
+}
+.scroll-padding{
+    padding-bottom: 50px;
+    padding-right: 20;
+    display: flex;
+}
+
+.scroll-object{
+    color: white;
+    font-family: "omori_gameregular";
+    font-size: 28px;
+    padding-left: 10;
+
+    
+}
+
+/* Omori comic img links */
+.images{
+    display: flex;
+    justify-content: center;
+}
+.images img{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+
+/* Return from comic page */
+.lightbulb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+  }
+  .lightbulb img{
+      width: 80px;
+      position: relative;
+      left: -137%;
+  }
+  .lightbulb img:hover{
+    width: 85px;
+}
+  .images img:hover{
+    position: relative;
+    top: -4px;
+}
+
+.omocat{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact{
+    text-align: center;
+}
+.form-align{
+    text-align: center;
+  }
+/* About omori */
+.about{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* main text */
+.about p{
+    text-align: center;
+    margin-top: 60px; ;
+}
+/* warning segment */
+.about .warning p{
+    text-align: center;
+    margin-top: 10px; ;
+    
+    font-size: 20px;
+    color: gray;
+}
+.about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+/* something this is */
+.something img{
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+/* Omori music team */
+.main-page{
+    align-items: center;
+    justify-content:center
+    
+}
+.music-container{
+    background-color: black;
+    box-shadow: inset 0 0 0 1px #000, inset 0 0 0 3px #fff;
+
+    
+}
